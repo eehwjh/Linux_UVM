@@ -1,3 +1,0 @@
-Command Line: /tools/synopsys/verdi/W-2024.09-SP2/platform/LINUXAMD64/bin/Novas -dbdir ./simv.daidir -ssf wave.fsdb
-uname(Linux kccisynop2 5.14.0-427.13.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Apr 10 10:29:16 EDT 2024 x86_64)
-au time 1618.028954 9.302417 1.701199 delta 299585536 299585536 total 1145647104 1145647104
