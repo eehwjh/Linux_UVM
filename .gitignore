@@ -1,68 +1,37 @@
-# --- [Vivado & Xilinx] ---
-# 프로젝트 파생 파일 및 로그
-*.log
-*.jou
-*.pb
-*.str
-*.vdi
-*.os
-*.dir/
-.Xil/
-hd_visual/
-
-# 시뮬레이션 및 구현 결과물
-xsim.dir/
-obj/
-*.bit
-*.bin
-*.mcs
-*.prm
-*.gen/
-*.ip_user_files/
-*.hw/
-*.sim/
-*.runs/
-*.cache/
-*.srcs/utils_1/
-
-# --- [EDA 시뮬레이션 툴 (VCS, Questa, Xcelium, Icarus)] ---
-# 컴파일 및 시뮬레이션 데이터베이스
-work/
-msim/
-ncelog/
-INCA_libs/
-xcelium.d/
+# ==========================================
+# 1. VCS Compilation & Simulation (컴파일 및 시뮬레이션 찌꺼기)
+# ==========================================
+simv
+simv.daidir/
+simv.*
 csrc/
-simv*
-*.daidir/
-*.vdb
+*.log
 *.key
-*.history
-*.so
-*.o
-*.obj
+vc_hdrs.h
 
-# 파형 및 커버리지 파일
-*.vcd
-*.wdb
+# ==========================================
+# 2. Waveforms & Debugging Tools (Verdi, DVE 파형 및 설정)
+# ==========================================
 *.fsdb
-*.shm/
-cov_work/
-*.ucdb
+*.vpd
+*.vcd
+verdiLog/
+DVEfiles/
+novas.rc
+novas.conf
+novas_dump.log
 
-# --- [Editor & System] ---
-# 리눅스/Vim 임시 파일
-*~
+# ==========================================
+# 3. Coverage & Reports (커버리지 및 리포트 데이터)
+# ==========================================
+*.vdb
+urgReport/
+*.rpt
+
+# ==========================================
+# 4. OS & Editor Temp Files (리눅스/빔 에디터 임시 파일)
+# ==========================================
 *.swp
-*.swo
+*~
 .DS_Store
 
-# VS Code / IDE 설정 (팀 프로젝트라면 제외 권장)
-.vscode/
-.idea/
-
-# --- [Python & Scripts] ---
-# 검증 스크립트용 캐시
-__pycache__/
-*.py[cod]
-*$py.class
