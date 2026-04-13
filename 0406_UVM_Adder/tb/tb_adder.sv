@@ -165,7 +165,7 @@ class adder_environment extends uvm_env;
 
     function new(string name = "ADDER_ENV", uvm_component c);
        super.new(name, c);
-    endfunction //new()
+    endfunction //new
 
     virtual function void build_phase(uvm_phase phase);
         super.build_phase(phase);
@@ -198,8 +198,8 @@ class adder_test extends uvm_test;
     virtual task run_phase(uvm_phase phase);
         phase.raise_objection(this);
         a_seq.start(a_env.a_agt.a_sqr);
-        // #3000;
-        //`uvm_info(get_type_name(), "오브젝션 테스트 코드!", UVM_LOW);
+         #3000;
+        `uvm_info(get_type_name(), "오브젝션 테스트 코드!", UVM_LOW);
         phase.drop_objection(this);
     endtask // 
 

@@ -4,4 +4,4 @@ module adder (
 	output logic [8:0] y
 );
 	assign y = a + b;
-endmodule
+endmodule //이건 adder 모듈 입니다.
